@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>MyGame</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+            cursor: crosshair;
+        }
+    </style>
+    
+</head>
+<body>
+    <button style="position:absolute;margin:auto;width:50vw;height:20vw;left:25vw;top:50vh;font-size: 10vw;"id="start">start</button>
+    <canvas id="myCanvas"></canvas>
+</body>
+<script defer>
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    canvas = document.getElementById("myCanvas");
+    canvas.width = screenWidth;
+    canvas.height = screenHeight;
+</script>
+<script type="text/javascript"src="js\base\sprite.js" defer></script>
+<script type="text/javascript"src="./js/runtime/element.js" defer></script>
+<script type="text/javascript"src="./js/runtime/background.js" defer></script>
+<script type="text/javascript"src="js\runtime\login.js" defer></script>
+<script type="text/javascript"src="js\runtime\gameinfo.js" defer></script>
+<script type="text/javascript"src="js\runtime\music.js" defer></script>
+<script type="text/javascript"src="js\runtime\show.js" defer></script>
+
+<script type="text/javascript"src="./js/app.js" defer></script>
+<!-- <script type="text/javascript"src="game.js" defer></script> -->
+<script defer>
+    document.querySelector("#start").onclick=()=>{
+        document.querySelector("#start").style.display = "none";
+        new App();
+        console.log("start");
+    }; 
+</script>
+</html>>
