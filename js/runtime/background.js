@@ -13,7 +13,7 @@ const BG_HEIGHT    =  667
 class BackGround extends Sprite {
   constructor(ctx,BG_IMG_SRC) {
     super(BG_IMG_SRC, BG_WIDTH, BG_HEIGHT)
-    this.render(ctx)
+    // this.render(ctx)
   }
 
 
