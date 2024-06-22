@@ -117,7 +117,8 @@ class App {
 		let area = this.login.btnArea; //获取开始游戏按钮的区域
 
 		if (x >= area.startX && x <= area.endX && y >= area.startY && y <= area.endY) {
-			this.secenceChange(); //调用secenceChange方法，进入游戏
+			setTimeout(this.secenceChange,500);
+			// this.secenceChange(); //调用secenceChange方法，进入游戏
 		}
 	}
 	/**重玩，进入游戏，初始化游戏数据 */
