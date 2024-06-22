@@ -88,7 +88,8 @@ class App {
 		this.gameinfo = new GameInfo(ctx);
 		this.music = new Music();
 		this.bindLoop = this.step1.bind(this); //初始化游戏开始界面与监听
-		canvas.removeEventListener("touchstart", this.touchHandler);
+		// canvas.removeEventListener("touchstart", this.touchHandler);
+		canvas.removeEventListener("click", this.touchHandler);
 		//清空一下事件监听，防止重复绑定
 		// this.aniId = window.requestAnimationFrame(this.bindLoop, canvas);
 		setTimeout(this.bindLoop,500);

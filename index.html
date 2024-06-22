@@ -17,12 +17,17 @@
 </head>
 <body>
     <button style="position:absolute;margin:auto;width:50vw;height:20vw;left:25vw;top:50vh;font-size: 10vw;"id="start">start</button>
-    <canvas id="myCanvas"></canvas>
+    <canvas id="myCanvas"style="display:block;margin:auto;"></canvas>
 </body>
 <script defer>
-    const screenWidth = window.innerWidth;
+    let screenWidth = window.innerWidth;
+    if (window.innerHeight*0.7<window.innerWidth ){
+        screenWidth = window.innerHeight*0.5;
+    }
+    
     const screenHeight = window.innerHeight;
     canvas = document.getElementById("myCanvas");
+    canvas.style.margin="auto";
     canvas.width = screenWidth;
     canvas.height = screenHeight;
 </script>

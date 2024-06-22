@@ -12,5 +12,4 @@ $RECYCLE.BIN/
 
 # Node.js
 node_modules/
-*.mp3
-*.png
+
