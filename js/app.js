@@ -327,7 +327,7 @@ class App {
 		}
 
 		window.requestAnimationFrame(() => {
-			// if (this.selectedbox.length === 17) {   //为了调试暂时修改
+			// if (this.selectedbox.length === 5) {   //为了调试暂时修改
 			if (this.success_clear) {
 				
 				this.clear();
@@ -481,7 +481,7 @@ class App {
 	}
 	loopBlock() {
 		this.anB = window.requestAnimationFrame(() => {
-			minute += 4;
+			minute += 10;
 
 			if (minute < parseInt((this.maxx + 1) * imgH)) {
 				this.clear();
@@ -607,7 +607,7 @@ class App {
 			// this.show.qidui();
 			return true;
 		}
-		type = { gen: type.gen, combo: 0, san: 0, lian: 0 };
+		type = { gen: 0, combo: 0, san: 0, lian: 0 };
 		data = this.selectedbox.map((x) => x % 10000).sort();
 		i = 0;
 		j = 0;
