@@ -18,6 +18,7 @@ const imgH = 47.8 * scaly;
 const ceilX = 45 * scalx;
 const ceilY = 128 * scaly;
 const animal = [0, 1, 2, 3, 4]; //元素种类
+const fixedW = 95;
 const blocksite = {
 	10101: [0, 0],
 	10102: [0, 69],
@@ -504,7 +505,7 @@ class App {
 				this.isauto = false;
 				this.speed = 0;
 				this.repeat = false;
-				// this.isReapet(); //不需要检测是否重复
+				this.isReapet(); //不需要检测是否重复
 				console.log(this.boxData, this.repeat, "下落");
 				if (this.repeat) {
 					//不需要多次消除
