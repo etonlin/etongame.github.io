@@ -11,7 +11,9 @@
 │   └── weapp-adapter.js                   // 小游戏适配器（移植到web后不需要）
 ├── runtime
 │   ├── background.js                      // 背景类
+│   ├── element.js                         // 绘制元素方块
 │   ├── gameinfo.js                        // 用于展示分数和结算界面
+│   ├── login.js                           // 绘制游戏的开始按钮
 │   └── music.js                           // 全局音效管理器
 ├── databus.js                             // 管控游戏状态（移植到web后被舍弃）
 └── app.js                                 // 游戏主体
