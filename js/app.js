@@ -505,20 +505,20 @@ class App {
 				this.speed = 0;
 				this.repeat = false;
 				// this.isReapet(); //不需要检测是否重复
-				// console.log(this.boxData, this.repeat, "下落");
-				// if (this.repeat) {
-				// 	//不需要多次消除
-				// 	this.boxArray = {};
-				// 	setTimeout(() => {
-				// 		this.clear();
-				// 		this.down();
-				// 		this.isauto = true;
-				// 		this.fillBlock();
-				// 	}, 1000);
-				// } else {
-				// 	this.fill = false;
-				// 	this.clear();
-				// }
+				console.log(this.boxData, this.repeat, "下落");
+				if (this.repeat) {
+					//不需要多次消除
+					this.boxArray = {};
+					setTimeout(() => {
+						this.clear();
+						this.down();
+						this.isauto = true;
+						this.fillBlock();
+					}, 1000);
+				} else {
+					this.fill = false;
+					this.clear();
+				}
 			}
 		}, canvas);
 	}
