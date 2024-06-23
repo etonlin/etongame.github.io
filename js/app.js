@@ -358,7 +358,7 @@ class App {
 		this.gameinfo.renderImage(ctx, this.score.num);
 		this.gameinfo.renderTime(ctx, this.left);
 	}
-	/**未研究 */
+	/** */
 	downgame() {
 		this.bgupdate();
 
@@ -479,7 +479,6 @@ class App {
 	max(a, b) {
 		return a > b ? a : b;
 	}
-	/**疑似 */
 	loopBlock() {
 		this.anB = window.requestAnimationFrame(() => {
 			minute += 4;
@@ -505,21 +504,21 @@ class App {
 				this.isauto = false;
 				this.speed = 0;
 				this.repeat = false;
-				this.isReapet(); //不需要检测是否重复
-				console.log(this.boxData, this.repeat, "下落");
-				if (this.repeat) {
-					//不需要多次消除
-					this.boxArray = {};
-					setTimeout(() => {
-						this.clear();
-						this.down();
-						this.isauto = true;
-						this.fillBlock();
-					}, 1000);
-				} else {
-					this.fill = false;
-					this.clear();
-				}
+				// this.isReapet(); //不需要检测是否重复
+				// console.log(this.boxData, this.repeat, "下落");
+				// if (this.repeat) {
+				// 	//不需要多次消除
+				// 	this.boxArray = {};
+				// 	setTimeout(() => {
+				// 		this.clear();
+				// 		this.down();
+				// 		this.isauto = true;
+				// 		this.fillBlock();
+				// 	}, 1000);
+				// } else {
+				// 	this.fill = false;
+				// 	this.clear();
+				// }
 			}
 		}, canvas);
 	}
